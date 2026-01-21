@@ -1,0 +1,166 @@
+/**
+* This is to style the Exhibits page
+**/
+
+/*
+* This is the style class to style the entire div which contains
+* the story cards and title
+*/
+.exhibitsContainer {
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+/**
+* This is to style the title of the page
+**/
+.exhibits-header {
+  background: linear-gradient(to right, #f5f7fb, #f0f2f8);
+  border-radius: 16px;
+  padding: 2rem 1rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.exhibits-header h1 {
+  font-size: 3rem;
+  font-family: "Georgia", serif;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.exhibits-header p {
+  font-size: 1.2rem;
+  font-family: "Arial", sans-serif;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+/**
+* This is the style class to style the entire div which contains the story cards
+*/
+.storyGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+/**
+* This is to style the story cards like the blue nose and major topics
+*/
+.storyCard {
+  flex: 1 1 300px;
+  max-width: 340px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fdfdfd;
+  transition: box-shadow;
+}
+
+/**
+* This is to add the shadow effect behind the card on which the card hovers
+*/
+.storyCard:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/**
+* This is to style the images inside the story card to fit inside the card
+*/
+.storyCard img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-color: #eee;
+}
+/**
+* This is to add space between card so that the text doesn't stick together
+*/
+.storyCardBody {
+  padding: 1rem;
+}
+/**
+* This is to style the heading inside the story Cards
+*/
+.storyCardBody h5 {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+/**
+* This is to style the paragraphs inside the Story cards
+*/
+.storyCardBody p {
+  font-size: 0.95rem;
+  color: #000000;
+}
+
+/**
+* This is to style the div containing the cards
+*/
+.artifactGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+/**
+* This is to style the card which contains the artifact information
+*/
+.artifactCard {
+  flex: 1 1 280px;
+  max-width: 320px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+/**
+* This is to style the card when we hover on it
+*/
+.artifactCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+/**
+* This is to style the images inside the artifact card to fit inside the card
+*/
+.artifactCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: #ddd;
+}
+
+/**
+* This is to add padding inside the artifact card to space the text
+*/
+.artifactCardBody {
+  padding: 10px;
+}
+/**
+* This is to style the headings 5 inside the artifact card
+*/
+.artifactCardBody h5 {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+/**
+* This is to style the paragraphs inside the artifact card
+*/
+.artifactCardBody p {
+  color: #444;
+}
+

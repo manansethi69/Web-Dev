@@ -1,0 +1,36 @@
+/* [project]/src/app/map/Map.css [app-client] (css) */
+.map-page-wrapper {
+  text-align: center;
+  background-color: #f5f7fb;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  box-shadow: 0 4px 20px #0000000f;
+}
+
+.map-heading {
+  letter-spacing: .5px;
+  margin-top: .25rem;
+  margin-bottom: 1rem;
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.map-subheading {
+  margin-bottom: 2rem;
+  font-family: Arial, sans-serif;
+  font-size: 1.25rem;
+}
+
+.map-client-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=src_app_map_Map_40486732.css.map*/

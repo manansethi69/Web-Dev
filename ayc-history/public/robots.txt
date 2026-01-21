@@ -1,0 +1,9 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow API endpoints from being indexed
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://armdaleartifacts.com/sitemap.xml

@@ -1,0 +1,12 @@
+/* [project]/src/app/_components/ArtifactMap.css [app-client] (css) */
+.map-page-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.leaflet-container {
+  border-radius: 10px;
+  box-shadow: 0 0 15px #0000001a;
+}
+
+/*# sourceMappingURL=src_app__components_ArtifactMap_css_bad6b30c._.single.css.map*/

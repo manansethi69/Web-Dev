@@ -1,0 +1,193 @@
+/* [project]/src/app/_components/Artifact.css [app-client] (css) */
+.artifact-layout {
+  background-color: #fafafa;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px #0000001a;
+}
+
+.artifact-layout h2 {
+  color: var(--text-primary);
+  margin-bottom: .5em;
+  font-family: Georgia, serif;
+}
+
+.artifact-layout .artifact-year {
+  color: var(--text-primary);
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+}
+
+.artifact-carousel img {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.artifact-meta {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.artifact-description {
+  text-align: left;
+  flex: 1;
+  min-width: 250px;
+}
+
+.artifact-description p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.artifact-map-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.artifact-map {
+  aspect-ratio: 4 / 3;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.fullscreen-modal {
+  z-index: 9999;
+  background-color: #000000eb;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.fullscreen-image {
+  border-radius: 8px;
+  max-width: 95vw;
+  max-height: 95vh;
+  box-shadow: 0 0 15px #00000080;
+}
+
+.modal-close-button {
+  color: #fff;
+  cursor: pointer;
+  z-index: 10000;
+  text-shadow: 1px 1px 1px #000000e6;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  position: fixed;
+  top: 0;
+  right: 20px;
+}
+
+.carousel-image-wrapper {
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-image {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel .control-arrow {
+  z-index: 3;
+  pointer-events: auto;
+  border: 1px solid #03c;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  transition: all .3s;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(200%);
+  color: #03c !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  background-color: #0000ff4d !important;
+}
+
+.carousel .control-arrow:hover {
+  color: #fff !important;
+  background-color: #03c !important;
+}
+
+.fullscreen-map-container {
+  z-index: 999;
+  border-radius: 10px;
+  width: 80vw;
+  max-width: 1000px;
+  height: 70vh;
+  padding: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+
+.fullscreen-map {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel .slider-wrapper {
+  position: relative;
+}
+
+.fullscreen-modal {
+  z-index: 1000;
+  background: #000000eb;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.fullscreen-image-wrapper {
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+}
+
+.fullscreen-caption-overlay {
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  pointer-events: none;
+  background: #0009;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: .85rem;
+  font-style: italic;
+  position: absolute;
+  bottom: 2%;
+}
+
+/*# sourceMappingURL=src_app__components_Artifact_css_bad6b30c._.single.css.map*/

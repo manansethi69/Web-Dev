@@ -1,0 +1,161 @@
+/*
+* Styling class for header
+*/
+.header {
+  background-color: #f8f9fa;
+}
+
+/*
+* This style adds space and centers the anchor tag links
+*/
+#links {
+  text-align: center;
+}
+
+#links a {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+}
+
+/*
+* This class is to add space between the two div which have the title and links
+*/
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px 20px 10px;
+  gap: 2rem;
+}
+
+/*
+* Add color to anchor tags 
+*/
+nav>a {
+  color: #555;
+}
+
+/*
+* This is to underline the anchor links
+*/
+header a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+/*
+* This is to style the div containing title and image
+*/
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+/*
+* This is to style the image
+*/
+.logo {
+  height: 105px;
+  margin-right: 15px;
+}
+
+/*
+* This styles the logo title in the header
+*/
+.logo-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/*
+* This styles the heading h1 of the title
+*/
+.logo-title h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-primary);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+/*
+* This styles the headinh h4 of the title
+*/
+.logo-title h4 {
+  margin: 0.2rem 0 0 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #5a6480;
+}
+
+/*
+* This styles the whole header component
+*/
+.site-header {
+  color: var(--text-light);
+  padding: 1rem 0 1rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/*
+* This is to remove the underline when you hover over the image and text
+*/
+.removeUnderLine {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/**
+* This is to remove the underline when you hover over the image and text
+*/
+.removeUnderLine:hover {
+  text-decoration: none;
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #555;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  #links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    background: white;
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    z-index: 1000;
+  }
+
+  #links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

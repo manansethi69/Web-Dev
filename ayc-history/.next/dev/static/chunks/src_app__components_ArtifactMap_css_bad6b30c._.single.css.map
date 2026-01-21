@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/_components/ArtifactMap.css"],"sourcesContent":[".map-page-container {\r\n  text-align: center;\r\n  padding: 2rem;\r\n}\r\n\r\n.leaflet-container {\r\n  border-radius: 10px;\r\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;AAKA"}}]
+}

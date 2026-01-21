@@ -1,0 +1,25 @@
+{
+    "name": "Armdale Yacht Club Historic Archive",
+    "short_name": "AYC Archive",
+    "description": "Digital archive of Armdale Yacht Club historic artifacts and maritime heritage",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1e3a8a",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "/img/ayc-logo.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/img/ayc-logo.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ]
+  }
+  

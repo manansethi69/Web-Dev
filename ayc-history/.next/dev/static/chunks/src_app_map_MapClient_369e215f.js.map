@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/msset/ayc-history/src/app/map/MapClient.js"],"sourcesContent":["\"use client\";\r\n\r\nimport dynamic from \"next/dynamic\";\r\nimport React from \"react\";\r\nimport \"./Map.css\";\r\n\r\nconst ArtifactMap = dynamic(() => import(\"../_components/ArtifactMap\"), {\r\n  ssr: false\r\n});\r\n\r\nexport default function MapClient() {\r\n  return (\r\n    <div className=\"map-client-wrapper\">\r\n      <ArtifactMap />\r\n    </div>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;AAEA;AACA;;AAHA;;;;;AAMA,MAAM,cAAc,IAAA,6KAAO,EAAC;;;;;;IAC1B,KAAK;;KADD;AAIS,SAAS;IACtB,qBACE,6LAAC;QAAI,WAAU;kBACb,cAAA,6LAAC;;;;;;;;;;AAGP;MANwB","debugId":null}}]
+}

@@ -1,0 +1,214 @@
+.timeline-container {
+  position: relative;
+  padding: 70px 40px;
+  background: white;
+  color: white;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+              url("/img/boatBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: lighten;
+}
+
+.timeline-header {
+  background: linear-gradient(to right, #f5f7fb, #f0f2f8);
+  border-radius: 16px;
+  padding: 3rem 1.5rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.timeline-header h1 {
+  font-size: 3.5rem;
+  font-family: "Georgia", serif;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.timeline-image {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10px auto 0 auto;
+  display: block;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #888;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.timeline-row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: rgb(61, 61, 61);
+  border-radius: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
+
+
+.title-timeline {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.artifact-line {
+  background-color: #0a0a0a;
+  height: 1px;
+  width: 1520px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  width: 35%;
+  position: relative;
+  background-color: #666;
+}
+
+.timeline-item.left {
+  position: relative;
+  transform: translateX(-60%);
+  text-align: left;
+}
+
+
+.timeline-item.right {
+  position: relative;
+  transform: translateX(60%);
+  text-align: left;
+}
+
+
+.timeline-content {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid #333;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+
+.timeline-content h4 {
+  margin-top: 0px;
+
+}
+.timeline-year {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.year-line {
+  background-color: #0a0a0a;
+  height: 1px;
+  width: 350px;
+  margin: 0 auto; 
+}
+
+.timeline-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 5px;
+  color:#444;
+  text-align: center;
+}
+
+.timeline-description {
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: center;
+  color: gray;
+}
+
+.timeline-end {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.read-more-btn {
+  border: 1px solid #e2e8f0;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: ball 0.3s ease;
+  font-family: 'Georgia', serif;
+}
+
+.read-more-btn:hover {
+  background: #999;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-line {
+    left: 20px;
+    transform: none;
+  }
+
+  .timeline-row {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-bottom: 60px;
+  }
+
+  .timeline-dot {
+    left: 0;
+    transform: translate(0, 0);
+    margin-left: -46px; 
+  }
+
+  .timeline-item {
+    width: 100%;
+    transform: none !important;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .timeline-content {
+    padding: 16px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    transform: none;
+  }
+
+  .artifact-line {
+    width: 100%;
+  }
+
+  .year-line {
+    width: 100%;
+  }
+}

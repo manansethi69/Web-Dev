@@ -1,0 +1,349 @@
+/* [project]/src/app/_homepage/HomePage.css [app-client] (css) */
+body {
+  color: #0a0a0a;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.homepage {
+  text-align: center;
+}
+
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .nav-links a {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    display: flex;
+  }
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+.nav-links a {
+  color: #222;
+  margin-left: 50px;
+  font-size: larger;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #f3c966;
+  padding: 90px 20px;
+}
+
+.hero h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.welcome h1 {
+  font-size: 36px;
+}
+
+.homepage .btn {
+  cursor: pointer;
+  background-color: #f3c966;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 3px 6px #00000026;
+}
+
+.btn.dark {
+  color: #fff;
+  background-color: #1d2e4a;
+}
+
+.btn.dark:hover {
+  color: #e6e6e6;
+  background-color: #142033;
+}
+
+.btn-hover {
+  color: #555;
+}
+
+.btn-hover:active {
+  background-color: #dab45b;
+}
+
+.btn-hover:hover {
+  color: var(--color-delft-blue);
+  background-color: #e8c870;
+}
+
+.welcome {
+  padding: 50px 20px;
+}
+
+.welcome h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.welcome p {
+  color: #555;
+  max-width: 600px;
+  margin: auto;
+  font-family: Georgia, sans-serif;
+  line-height: 1.8;
+}
+
+.welcome a {
+  color: #000;
+  font-size: .95rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.exhibits {
+  margin-bottom: 40px;
+  padding: 40px 20px;
+}
+
+.exhibit-cards {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+  display: flex;
+}
+
+.card {
+  text-align: left;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  width: 300px;
+  padding-bottom: 25px;
+  transition: transform .3s, box-shadow .3s;
+  overflow: hidden;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.card h4 {
+  margin: 10px;
+}
+
+.card p {
+  color: #555;
+  margin: 0 10px;
+}
+
+.timeline-map-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10rem;
+  margin-right: 2%;
+  display: flex;
+}
+
+.historical-timeline, .artifact-map-home {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.line {
+  background-color: #0a0a0a;
+  border-radius: 10px;
+  width: 1050px;
+  height: 1px;
+  margin: 60px auto -30px;
+}
+
+.button {
+  cursor: pointer;
+  background-color: #f3c966;
+  border: none;
+  border-radius: 5px;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 12px 24px;
+  font-weight: bold;
+  display: flex;
+}
+
+.arrow-img {
+  object-fit: contain;
+  width: 16px;
+  height: 16px;
+}
+
+.readmore {
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  display: flex;
+}
+
+.exhibits-stories-header {
+  color: var(--text-primary);
+  margin-bottom: .5em;
+  font-family: Georgia, serif;
+}
+
+.hero h1, .community-links h2, .exhibits-stories-header, .historical-timeline h3, .artifact-map-home h3 {
+  color: #1d2e4a;
+  font-family: Georgia, sans-serif;
+}
+
+.slidingImage.fancy-strip {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 0;
+  min-height: 260px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slidingImage.fancy-strip:after {
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(#00000059 0%, #00000040 60%, #0006 100%);
+  position: absolute;
+  inset: 0;
+}
+
+.slidingImage.fancy-strip.alt:after {
+  background: linear-gradient(#00000040 0%, #00000059 60%, #0000008c 100%);
+}
+
+.slidingImage.fancy-strip.is-short {
+  height: 38vh;
+  min-height: 280px;
+}
+
+.community-links {
+  text-align: center;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 16px 8px;
+}
+
+.community-links h2 {
+  margin: 6px 0 8px;
+}
+
+.community-sub {
+  color: #1d2e4a;
+  margin: 0 auto 18px;
+  font-family: Georgia, sans-serif;
+}
+
+.community-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  display: grid;
+}
+
+.community-card {
+  color: #fff;
+  text-align: left;
+  background-position: center;
+  background-size: cover;
+  border-radius: 18px;
+  align-items: flex-end;
+  height: 260px;
+  text-decoration: none;
+  transition: transform .2s, box-shadow .2s;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 26px #00000026;
+}
+
+.community-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px #00000040;
+}
+
+.community-card.opti {
+  background-image: url("https://images.unsplash.com/photo-1605804802241-bcec31a527e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcHRpbWlzdCUyMHNhaWxpbmclMjByYWNlJTIwa2lkc3xlbnwxfHx8fDE3NjA3MzgzNjl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral");
+}
+
+.community-card.broader {
+  background-image: url("https://images.unsplash.com/photo-1610824559182-8ae676a22659?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzYWlsaW5nJTIwYm9hdCUyMGhhcmJvcnxlbnwxfHx8fDE3NjA2OTk0MjF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral");
+}
+
+.community-card-overlay {
+  background: linear-gradient(#0003 20%, #000000a6 100%);
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px;
+  display: flex;
+  position: absolute;
+  inset: 0;
+}
+
+.community-card-body {
+  z-index: 2;
+  text-align: left;
+  max-width: 90%;
+}
+
+.community-card-body h3, .community-card-body p, .community-cta {
+  color: #fff;
+  font-family: Georgia, sans-serif;
+}
+
+.community-card-body h3 {
+  margin-bottom: 6px;
+  font-size: 22px;
+}
+
+.community-card-body p {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.community-cta {
+  color: #f3c966;
+  border-bottom: 2px solid #f3c966;
+  display: inline-block;
+}
+
+.community-card:hover .community-cta {
+  color: #fff;
+  border-color: #fff;
+}
+
+@media (max-width: 980px) {
+  .slidingImage.fancy-strip {
+    height: 46vh;
+  }
+}
+
+@media (max-width: 760px) {
+  .community-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .slidingImage.fancy-strip {
+    background-attachment: scroll;
+  }
+}
+
+/*# sourceMappingURL=src_app__homepage_HomePage_css_bad6b30c._.single.css.map*/

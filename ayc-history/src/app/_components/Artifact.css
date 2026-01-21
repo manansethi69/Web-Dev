@@ -1,0 +1,200 @@
+/* Layout container for the entire artifact */
+.artifact-layout {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fafafa;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.artifact-layout h2 {
+  font-family: "Georgia", serif;
+  color: var(--text-primary);
+  margin-bottom: 0.5em;
+}
+
+.artifact-layout .artifact-year {
+    font-family: "Georgia", serif;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+}
+
+/* Image styling inside the carousel */
+.artifact-carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Metadata container holding map and description, etc. */
+.artifact-meta {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Description block styling */
+.artifact-description {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+.artifact-description p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Container for map section */
+.artifact-map-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+/* Embedded map styling */
+.artifact-map {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Image modal styling */
+.fullscreen-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.fullscreen-image {
+  max-height: 95vh;
+  max-width: 95vw;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.modal-close-button {
+  position: fixed;
+  top: 0px;
+  right: 20px;
+  font-size: 3rem;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10000;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+}
+
+.carousel-image-wrapper {
+  max-width: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel .control-arrow {
+  background-color: rgba(0, 0, 255, 0.3) !important;
+  color: #0033cc !important;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #0033cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(200%);
+  z-index: 3;
+  pointer-events: auto;
+}
+
+.carousel .control-arrow:hover {
+  background-color: #0033cc !important;
+  color: white !important;
+}
+
+/* Fullscreen map container on click */
+.fullscreen-map-container {
+  height: 70vh;
+  width: 80vw;
+  max-width: 1000px;
+  z-index: 999;
+  border-radius: 10px;
+  overflow: hidden;
+  position: fixed;
+  padding: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: auto;
+}
+
+.fullscreen-map {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.carousel .slider-wrapper {
+  position: relative;
+}
+
+/* Photo captions */
+.fullscreen-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.fullscreen-image-wrapper {
+    position: relative;
+    max-height: 90vh;
+    max-width: 90vw;
+}
+
+.fullscreen-caption-overlay {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 0.85rem;
+    font-style: italic;
+    padding: 10px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    pointer-events: none;
+}

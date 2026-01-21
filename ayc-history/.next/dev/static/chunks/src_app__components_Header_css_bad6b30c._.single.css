@@ -1,0 +1,122 @@
+/* [project]/src/app/_components/Header.css [app-client] (css) */
+.header {
+  background-color: #f8f9fa;
+}
+
+#links {
+  text-align: center;
+}
+
+#links a {
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  display: inline-block;
+}
+
+.container {
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px 10px;
+  display: flex;
+}
+
+nav > a {
+  color: #555;
+}
+
+header a:hover, a:active {
+  text-decoration: underline;
+}
+
+.logo-title {
+  align-items: center;
+  display: flex;
+}
+
+.logo {
+  height: 105px;
+  margin-right: 15px;
+}
+
+.logo-title {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.logo-title h1 {
+  color: var(--text-primary);
+  letter-spacing: .05em;
+  white-space: nowrap;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.logo-title h4 {
+  color: #5a6480;
+  margin: .2rem 0 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.site-header {
+  color: var(--text-light);
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.removeUnderLine {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.removeUnderLine:hover {
+  text-decoration: none;
+}
+
+.hamburger {
+  cursor: pointer;
+  color: #555;
+  z-index: 1000;
+  font-size: 2rem;
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#links {
+  gap: 1.2rem;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  #links {
+    z-index: 1000;
+    background: #fff;
+    border: 1px solid #ddd;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+  }
+
+  #links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=src_app__components_Header_css_bad6b30c._.single.css.map*/

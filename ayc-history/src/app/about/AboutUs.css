@@ -1,0 +1,151 @@
+/**
+* This is style the entire About US page
+*/
+.aboutPage {
+  max-width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/**
+* This is to style the div which contains social media image
+*/
+.socialMedia {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/**
+* This is to style the div which contains the text and the social media image
+*/
+.socialMediaDiv {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/**
+* This is to style the anchor tag inside the social media div
+*/
+.socialMedia a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/**
+* This is to style the icons of the social media
+*/
+.socialMedia img {
+  width: 195%;
+  height: 195%;
+  object-fit: contain;
+}
+
+/**
+* This is to style the individual phone icon
+*/
+#phoneIcon {
+  width: 115%;
+  height: 115%;
+  object-fit: contain;
+}
+
+/**
+* This is to style the individual facebook icon
+*/
+#facebookIcon {
+  width: 125%;
+  height: 125%;
+  object-fit: contain;
+}
+
+/**
+* This is to create the sliding affect
+*/
+.slidingImage {
+  height: 50vh;
+  width: 100vw;
+  background-color: brown;
+  background-image: url("/img/aycBoats.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  /*background-attachment: scroll;*/
+  background-attachment: fixed;
+  padding: 0%;
+}
+
+/**
+* This is to style the contact info on the about page
+*/
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.main p {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/**
+* This is to style the h2 tags on the about page
+*/
+h2 {
+  text-align: center;
+}
+
+/**
+* This is to add image behind the text
+*/
+.backgroundImage {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+      url("/img/boatBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no repeat;
+  background-blend-mode: lighten;
+  width: 100vw;
+}
+
+/**
+* This is to add color behind connect us 
+*/
+#contactInfo {
+  background-color: #f2f2f2;
+}
+
+/**
+* This is to add color to h2 and h3 of connect us 
+*/
+#contactInfo h2,
+h3 {
+  color: #38446f;
+}
+
+.about-desc {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+
+  .main p {
+      max-width: 90%;
+      margin: 0 auto;
+      line-height: 1.8;
+  }
+
+  h2 {
+      max-width: 90%;
+      margin: 20px auto;
+  }
+}

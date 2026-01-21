@@ -1,0 +1,346 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #0a0a0a;
+}
+
+.homepage {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+  .nav-links a{
+    flex-direction: column;
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+  }
+}
+.logo {
+  width: 70px; 
+  height: auto;
+}
+
+.nav-links a {
+  margin-left: 50px;
+  text-decoration: none;
+  color: #222;
+  font-weight:bolder;
+  font-size: larger;
+}
+
+.hero {
+  background-color: #f3c966;
+  padding: 90px 20px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.welcome h1 {
+  font-size: 36px;
+}
+
+.homepage .btn {
+  background-color: #f3c966;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn.dark {
+  background-color: #1d2e4a;
+  color: white;
+}
+
+.btn.dark:hover {
+  background-color: #142033;
+  color: rgb(230, 230, 230);
+}
+
+.btn-hover {
+  color: #555;
+}
+
+.btn-hover:active {
+  background-color: #dab45b;
+}
+
+.btn-hover:hover {
+  background-color: #e8c870;
+  color: var(--color-delft-blue);;
+}
+
+.welcome {
+  padding: 50px 20px;
+}
+
+.welcome h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.welcome p {
+  max-width: 600px;
+  line-height: 1.8;
+  margin: auto;
+  font-family: 'Georgia', sans-serif;
+  color: #555;
+}
+
+.welcome a {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: black;
+  text-decoration: none;
+}
+
+.exhibits {
+  padding: 40px 20px;
+  margin-bottom: 40px;
+}
+
+.exhibit-cards {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: left;
+  padding-bottom: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h4 {
+  margin: 10px;
+}
+
+.card p {
+  margin: 0 10px;
+  color: #555;
+}
+
+.timeline-map-container {
+  display: flex;
+  gap: 10rem; /* space between the two sections */
+  justify-content: center; /* center them horizontally */
+  align-items: flex-start; /* align to top */
+  flex-wrap: wrap; /* makes it responsive */
+  margin-right: 2%;
+}
+
+.historical-timeline,
+.artifact-map-home {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+
+.line {
+  background-color: #0a0a0a;
+  height: 1px;
+  width: 1050px;
+  margin:  auto; 
+  border-radius: 10px; 
+  margin-top: 60px;
+  margin-bottom: -30px;
+}
+
+.button {
+  display: flex;
+  align-items: center; 
+  gap: 8px; 
+  background-color: #f3c966;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 40px;
+}
+
+.arrow-img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+.readmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; 
+}
+
+.exhibits-stories-header {
+  font-family: 'Georgia', serif;
+  color: var(--text-primary);
+  margin-bottom: 0.5em;
+}
+/* Match main section headings to the hero's font + color (no size change) */
+.hero h1,
+.community-links h2,
+.exhibits-stories-header,
+.historical-timeline h3,
+.artifact-map-home h3 {
+  font-family: 'Georgia', sans-serif;
+  color: #1d2e4a;
+}
+
+/* Sliding image strips (use with: <section class="slidingImage fancy-strip">) */
+.slidingImage.fancy-strip {
+  position: relative;
+  height: 0vh;
+  min-height: 260px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* nice parallax feel on desktop */
+  overflow: hidden;
+}
+.slidingImage.fancy-strip::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,.25) 60%, rgba(0,0,0,.4) 100%);
+  pointer-events: none;
+}
+/* Alternate overlay for variety (use class "alt") */
+.slidingImage.fancy-strip.alt::after {
+  background: linear-gradient(180deg, rgba(0,0,0,.25) 0%, rgba(0,0,0,.35) 60%, rgba(0,0,0,.55) 100%);
+}
+/* Utility: make a strip shorter by adding "is-short" to that section */
+.slidingImage.fancy-strip.is-short {
+  height: 38vh;
+  min-height: 280px;
+}
+
+/* Community links section (cards) */
+.community-links {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 16px 8px;
+  text-align: center;
+}
+.community-links h2 {
+  margin: 6px 0 8px; /* keeps your spacing vibe */
+}
+.community-sub {
+  color: #1d2e4a;
+  margin: 0 auto 18px;
+  font-family: 'Georgia', sans-serif;
+}
+
+/* Community link cards */
+.community-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+/* ==== COMMUNITY CARD BACKGROUNDS WITH IMAGE ==== */
+.community-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  height: 260px;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.community-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
+}
+
+/* Specific background images */
+.community-card.opti {
+  background-image: url('https://images.unsplash.com/photo-1605804802241-bcec31a527e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcHRpbWlzdCUyMHNhaWxpbmclMjByYWNlJTIwa2lkc3xlbnwxfHx8fDE3NjA3MzgzNjl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral');
+}
+
+.community-card.broader {
+  background-image: url('https://images.unsplash.com/photo-1610824559182-8ae676a22659?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzYWlsaW5nJTIwYm9hdCUyMGhhcmJvcnxlbnwxfHx8fDE3NjA2OTk0MjF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral');
+}
+
+/* Add a dark overlay for readability */
+.community-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.2) 20%, rgba(0,0,0,0.65) 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Text inside cards */
+.community-card-body {
+  z-index: 2;
+  text-align: left;
+  max-width: 90%;
+}
+.community-card-body h3,
+.community-card-body p,
+.community-cta {
+  font-family: 'Georgia', sans-serif;
+  color: white;
+}
+.community-card-body h3 {
+  margin-bottom: 6px;
+  font-size: 22px;
+}
+.community-card-body p {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.community-cta {
+  display: inline-block;
+  border-bottom: 2px solid #f3c966;
+  color: #f3c966;
+}
+.community-card:hover .community-cta {
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 980px) {
+  .slidingImage.fancy-strip { height: 46vh; }
+}
+@media (max-width: 760px) {
+  .community-grid { grid-template-columns: 1fr; }
+  /* mobile browsers often ignore background-attachment: fixed; this still looks good */
+  .slidingImage.fancy-strip { background-attachment: scroll; }
+}

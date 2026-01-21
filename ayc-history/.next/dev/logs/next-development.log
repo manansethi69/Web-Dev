@@ -1,0 +1,73 @@
+[00:00:01.143] Server  LOG      ✓ Ready in 803ms
+[00:00:31.901] Server  LOG      ○ Compiling / ...
+[00:00:33.622] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:00:33.629] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:00:33.632] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:00:34.914] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:46.700] Server  LOG      ○ Compiling /about ...
+[00:01:47.198] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:01:47.200] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:01:59.260] Server  LOG      ○ Compiling /map ...
+[00:01:59.848] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /map. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:01:59.850] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /map. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:01:59.957] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /map. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:01:59.958] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /map. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:02:03.002] Server  ERROR    ⨯ Error: supabaseUrl is required.
+[00:02:06.043] Server  LOG      ○ Compiling /_error ...
+[00:04:55.890] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:55.893] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:56.718] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:18.113] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /exhibits. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:18.117] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /exhibits. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:18.520] Server  ERROR    ⨯ Error: supabaseUrl is required.
+[00:05:18.757] Server  ERROR    ⨯ Error: supabaseUrl is required.
+[00:05:18.768] Browser ERROR   Error fetching artifacts: {}
+[00:05:18.954] Browser ERROR   Error fetching artifacts: {}
+[25:16:42.816] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[25:16:42.817] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[25:16:43.607] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[25:16:53.206] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /map. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[25:16:53.207] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /map. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[25:16:53.856] Server  ERROR    ⨯ Error: supabaseUrl is required.
+[25:16:57.402] Server  LOG      ○ Compiling /timeline ...
+[25:17:01.057] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /timeline. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[25:17:01.058] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /timeline. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[25:17:01.634] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /gallery. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[25:17:01.635] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /gallery. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[25:17:01.848] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /gallery. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[25:17:01.849] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /gallery. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[25:17:02.122] Server  ERROR    ⨯ Error: supabaseUrl is required.
+[25:17:02.339] Server  ERROR    ⨯ Error: supabaseUrl is required.
+[25:17:02.349] Browser ERROR   Error fetching artifacts: {}
+[25:17:02.534] Browser ERROR   Error fetching artifacts: {}
+[25:17:05.899] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[25:17:05.901] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[116:52:01.028] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[116:52:01.030] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[116:52:01.893] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

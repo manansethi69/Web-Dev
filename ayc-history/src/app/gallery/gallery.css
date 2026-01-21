@@ -1,0 +1,359 @@
+/* ============================= */
+/* Gallery Page Header           */
+/* ============================= */
+
+.gallery-header {
+  background: linear-gradient(to right, #f5f7fb, #f0f2f8);
+  border-radius: 16px;
+  padding: 2rem 1rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-header h1 {
+  font-size: 3rem;
+  font-family: "Georgia", serif;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.gallery-header p {
+  font-size: 1.2rem;
+  font-family: "Arial", sans-serif;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+/* ============================= */
+/* Gallery Layout & Container   */
+/* ============================= */
+
+.gallery-container {
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #3c456d;
+  /* Delft Blue */
+}
+
+.gallery-grid {
+  column-count: 3;
+  column-gap: 1rem;
+  padding: 1rem;
+}
+
+.container.my-5 {
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+
+.row img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ============================= */
+/* Gallery Items                 */
+/* ============================= */
+
+.gallery-item {
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.gallery-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.gallery-item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.gallery-item p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* ============================= */
+/* Linked Image Blocks           */
+/* ============================= */
+
+.gallery-image-link {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1rem;
+  break-inside: avoid;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+}
+
+.gallery-image-link img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-image-link img:hover {
+  transform: scale(1.03);
+}
+
+/* ============================= */
+/* Artifact Modal & Overlay      */
+/* ============================= */
+
+.artifact-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.artifact-modal {
+  background: white;
+  width: 100%;
+  max-width: 750px;
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 10px;
+  padding: 2rem;
+  position: relative;
+  z-index: 1001;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.artifact-modal .close-button {
+  position: absolute;
+  top: -0.5rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  color: #555;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.artifact-carousel {
+  margin-bottom: 1.5rem;
+}
+
+.artifact-carousel .carousel .slide img {
+  max-height: 400px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.artifact-description {
+  margin-bottom: 1rem;
+}
+
+.artifact-map-container {
+  margin-top: 1rem;
+  height: 300px;
+}
+
+/* ============================= */
+/* Tag Button Styles             */
+/* ============================= */
+
+.tag-button {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  color: #0016a5;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  font-family: inherit;
+  font-size: 1.1rem;
+}
+
+.tag-button:hover {
+  background-color: rgba(0, 22, 165, 0.1);
+}
+
+.tag-button.active {
+  background-color: #fcd65f;
+  color: #2b2b2b;
+  font-weight: 700;
+}
+
+/* ============================= */
+/* Filter Dropdown Layout        */
+/* ============================= */
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.25rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter-row select {
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  min-width: max-content;
+  width: auto;
+  max-width: 100%;
+  transition: border-color 0.3s ease;
+  text-align: left;
+  padding-right: 2.5rem;
+}
+
+.filter-row select:focus {
+  border-color: #86b7fe;
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* ============================= */
+/* Gallery Divider               */
+/* ============================= */
+.gallery-divider {
+  margin-top: 1.5rem;
+  width: 80px;
+  height: 4px;
+  background-color: var(--color-sunglow);
+  border: none;
+  border-radius: 2px;
+}
+
+/* ============================= */
+/* Gallery Search Bar            */
+/* ============================= */
+
+.gallery-search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.gallery-search-bar input {
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-intro-section {
+  background: linear-gradient(to right, #f5f7fb, #f0f2f8);
+  padding: 1.25rem;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.col-lg-4 {
+    width: 60vw;
+    max-width: 60vw;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .col-lg-4 > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col-lg-4 img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    max-width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .col-lg-4 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+.gallery-title {
+  font-size: 3rem;
+  color: #3c456d;
+  margin-bottom: 1rem;
+}
+
+.gallery-subtitle {
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.custom-select {
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+}
