@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "SafeDating (3D Game)",
+    "author": "Manan Sethi",
+    "languages": ["C#", "Unity", "Blender", "Git", "JIRA", "Confluence", "Teamwork"],
+    "description": "Created a safe, kid-friendly 3D open-world dating game at DPL Studios, where players explore diverse locations and engage in conversations with characters, utilizing Unity and Blender across three levels."
+  },
+  {
+    "id": 2,
+    "name": "Mi’kmaw Kina’matnewey (2D Game)",
+    "author": "Manan Sethi",
+    "languages": ["Node.js", "Express", "MongoDB"],
+    "description": "A 2D adventure game integrating Mi'kmaw language learning, currently in development with planned fixes, new features, and iPad compatibility. "
+  },
+  {
+    "id": 3,
+    "name": "Weather App",
+    "author": "Manan Sethi",
+    "languages": ["React", "API", "CSS"],
+    "description": "A simple weather app fetching data from OpenWeather API."
+  }
+]

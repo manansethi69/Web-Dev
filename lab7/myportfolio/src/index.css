@@ -1,0 +1,155 @@
+/* === Global Styles === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('https://images.unsplash.com/photo-1741722604145-4e00cf5b2052?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyN3x8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+  background-size: cover;
+  animation: gradientBG 15s infinite alternate;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+  height: 100vh;
+  width: 100vw;
+}
+/* === Light Mode Styles === */
+.light-mode {
+  background: rgba(255, 255, 255, 0.6) !important; /* Semi-transparent white */
+  color: black !important;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* === Dark Mode === */
+.dark-mode {
+  background: rgba(0, 0, 0, 0.6) !important; /* Semi-transparent black */
+  color: white !important;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* === Splash Sections (Weather & Skills) === */
+.splash {
+  padding: 20px;
+  border-radius: 15px;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  backdrop-filter: blur(5px); /* Smooth blur effect */
+}
+
+.light-mode .splash {
+  background: rgba(255, 255, 255, 0.8); /* Whitish, still allows background */
+
+}
+
+.dark-mode .splash {
+  background: rgba(0, 0, 0, 0.7); /* Darker but not fully opaque */
+}
+
+/* === Weather & Skills Titles Based on Theme === */
+.light-mode .weather-title,
+.light-mode .skills-title {
+  color: black !important;
+}
+
+.dark-mode .weather-title,
+.dark-mode .skills-title {
+  color: white !important;
+}
+
+/* === Temperature Color Based on Theme === */
+.light-mode .temperature {
+  color: #d9534f;
+}
+
+.dark-mode .temperature {
+  color: #ff7373;
+}
+
+
+
+
+/* === Background Animation === */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* === Headings === */
+h1, h2, h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* === Navbar Styling === */
+.navbar {
+  background: rgba(0, 0, 0, 0.8) !important;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* === Section Styling === */
+section {
+  padding: 50px 0;
+}
+
+/* === Buttons === */
+.btn-primary {
+  background: linear-gradient(90deg, #ff758c, #ff7eb3);
+  border: none;
+  transition: all 0.3s ease-in-out;
+  color: #ffffff;
+  font-size: 10rem;
+  border-radius: 50px;
+}
+
+.btn-primary:hover {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  box-shadow: 0 0 15px rgba(255, 118, 165, 0.6);
+}
+
+/* === Card Styling === */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: #630c0c;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 118, 165, 0.5);
+}
+
+/* === Weather Section === */
+.weather-container {
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(255, 118, 165, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+/* === Footer === */
+.footer {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 15px;
+  color: white;
+}
+
+/* === Responsive Media Queries === */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,44 @@
+/* Light Mode */
+.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark Mode */
+.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Centering the button */
+button {
+    margin: 10px;
+}
+/* Default Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Tablet Screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .btn {
+        width: 100%;
+    }
+}
